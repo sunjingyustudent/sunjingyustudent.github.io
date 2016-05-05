@@ -1,0 +1,125 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.wrap{
+	width: 1024px;
+    margin:0 auto;
+     background-image: url(../img/background.png);
+    height: 962px;
+    padding-top: 62px;
+     background-size:1024px 1024px ;
+}
+.content{
+	width: 900px;
+	height: 900px;
+    margin:0 auto;
+    background-color: #fff;
+}
+.content_left{
+	width: 208px;
+    float: left;
+    border-right: 2px dashed #ccc;
+    padding: 20px;
+     height: 860px;
+}
+.content_right{
+	width: 610px;
+	float: right;
+	 padding: 20px;
+     height: 860px;
+}
+.bg_img{
+    width: 200px;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url(../img/img_bg.png);
+    background-size:200px 250px ;
+}
+.photo{
+	width: 110px;
+	height: 120px;
+	margin: 60px 45px;
+}
+.jianli_ziti{
+	width: 208px;
+	height: 200px;
+	 background-image: url(../img/jianli.png);
+    background-size:208px 200px ;
+}
+.jineng span{
+	font-size: 18px;
+}
+
+
+.fix{
+	width: 610px;
+	margin-top: 30px;
+}
+.content_right_img{
+	width: 200px;
+	height: 20px;
+	display: block;
+}
+span{
+	font-size: 12px;
+	display: block;
+	margin: 5px 10px;
+}
+.active{
+	margin-top: 30px;
+	width:610px;
+	height: 400px;
+	background-color: #ccc;
+	
+	
+}
+.active_left{
+	width:158px;
+	height: 400px;
+	float: left;
+	border-right:2px solid #999;
+
+}
+.active_left ul{
+	list-style: none;
+}
+.active_left ul li{
+	width: 158px;
+	height: 98px;
+	line-height: 98px;
+	text-align: center;
+	border-bottom:2px solid #ccc;
+	cursor: pointer;
+}
+.active_left ul li:hover{
+	border-bottom:2px solid #121314;
+}
+.active_left ul .new{
+	border-bottom:2px solid #121314;
+}
+.active_right{
+	width: 450px;
+	height: 400px;
+	float: right;
+	position: relative;
+	font-size: 24px;
+}
+.active_right div{
+	width: 410px;
+	height: 360px;
+	position: absolute;
+
+	display: none;
+	padding: 20px;
+}
+.active_right .no{
+	display: block;
+}
+h1{
+	margin-bottom: 30px;
+}
+.active_right span{
+	font-size: 18px;
+}
+
