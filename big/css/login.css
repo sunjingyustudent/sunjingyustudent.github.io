@@ -1,0 +1,44 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.log{
+	width: 600px;
+	height: 600px;
+	margin: 100px auto;
+	background-image: url(../img/login.png);
+	background-size: 800px 600px;
+	border-radius: 15px;
+	color: #FFED34;
+	font-weight: bold;
+}
+.log_div{
+		width: 600px;
+	height: 600px;
+	
+	border-radius: 15px;
+}
+h1{
+	padding: 30px;
+	text-align: center;
+}
+.log_table{
+	width: 500px;
+	height: 300px;
+	margin: 100px auto;
+	text-align: center;
+	background-color: #ccc;
+	border-radius: 15px;
+	opacity: 0.7;
+	font-size: 24px;
+}
+input{
+	background-color: #fff;
+	opacity: 0.7;
+	border-radius: 15px;
+}
+.button{
+	padding: 10px;
+	background-color: #000;
+	color: #FEED9A;
+}

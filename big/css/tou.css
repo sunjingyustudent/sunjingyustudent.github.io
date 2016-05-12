@@ -1,0 +1,116 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.wrap{
+	width: 100%;
+	
+}
+.lo{
+	width: 1024px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+/*logo start*/
+.logo{
+	width: 180px;
+	height: 80px;
+	float: left;
+}
+.logo img{
+	width: 180px;
+	height: 80px;
+}
+.login{
+	width:300px;
+	height: 80px;
+	float: right;
+}
+.login ul{
+	list-style: none;
+	text-align: center;
+}
+.login ul li{
+	width: 100px;
+	height: 80px;
+	line-height: 80px;
+	float: left;
+}
+.login ul li a{
+	text-decoration: none;
+	font-size: 24px;
+	color: #000;
+}
+.login ul li a:hover{
+	color: #999;
+}
+/*logo end*/
+/*nav start*/
+.nav{
+	height: 80px;
+	background-image: url(../img/nav2.png);
+	background-size: 100% 80px;
+	padding: 0 200px;
+}
+.nav .nav_ul{
+	width: 1024px;
+	margin: 0 auto;
+}
+.nav ul{
+	list-style: none;
+    overflow: hidden;
+    margin: 0 auto;
+ 
+}
+.nav ul li{
+	float: left;
+	line-height: 80px;
+	
+}
+.nav ul li a{
+	display: block;
+	text-align: center;
+	padding:0 20px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+}
+.nav ul li a:hover{
+	color: #E59704;
+	background-image: url(../img/bg_nav2.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #000;
+}
+/*nav end*/
+.content{
+	margin-top:50px;
+	height:1000px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	background-color: #F6F6F6;
+	padding-top:50px;
+}
+.mian_content{
+	width: 1024px;
+	height:900px;
+	border:1px solid #ccc;
+	background-color: #fff;
+	
+	margin: 0 auto;
+}
+.footer{
+	margin-top: 30px;
+	height: 80px;
+	background-image: url(../img/nav2.png);
+	background-size: 100% 80px;
+	padding-left: 200px;
+}
+.footer_div{
+	width: 600px;
+	font-size: 36px;
+	line-height: 80px;
+	color: #fff;
+	margin: 0 auto;
+}

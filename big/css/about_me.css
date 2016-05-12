@@ -1,0 +1,68 @@
+.content_img{
+	width: 800px;
+	height: 200px;
+	
+	margin: 50px 112px;
+}
+.about_me{
+	width: 800px;
+	height: 400px;
+	
+	margin: 50px 112px;
+	background-color: #F6F6F6;
+}
+.about_me_left{
+	width: 150px;
+	height: 400px;
+	float: left;
+	border-right: 2px solid #ccc;
+}
+.about_me_left_ul{
+	list-style: none;
+	text-align: center;
+}
+.about_me_left_ul li{
+	width: 150px;
+	height: 98px;
+	border-bottom: 2px solid #F6F6F6;
+	line-height: 100px; 
+	text-decoration:none;
+	color: #000;
+	display: block;
+}
+.about_me_left_ul li:hover{
+	border-bottom: 2px solid #D6C375;
+	color: #D6C375;
+}
+/*about_me_right start*/
+.about_me .about_me_right{
+	width: 648px;
+	height: 400px;
+	float: right;
+	
+}
+ .about_me .about_me_right div{
+   
+	width: 608px;
+	height: 400px;
+  
+  display: none;
+  padding: 20px;
+   
+
+}
+.about_me_left_ul .new{
+	border-bottom: 2px solid #D6C375;
+	color: #D6C375;
+}
+ .about_me .about_me_right .no{
+	display:block;
+}
+h1{
+	height: 60px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+p{
+	margin-top: 20px;
+}

@@ -1,0 +1,59 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+      background-image: url(../img/biaodan.png);
+      background-size:cover; 
+      
+}
+.wrap{
+	width: 1024px;
+	margin: 0px auto;
+
+	height: 1000px;
+	background-color: #000;
+	opacity: 0.2;
+	
+	position: relative;
+}
+.production_title{
+	width: 200px;
+	height: 100px;
+ margin-left: 50px;
+	position: relative;
+	top: 100px;
+	transform: rotate(-40deg);
+	float: left;
+opacity: 1;
+}
+.production_title img{
+	width: 200px;
+	height: 100px;
+}
+.content{
+	margin-top: 100px;
+
+	width: 600px;
+	height: 800px;
+	float: right;
+    padding:20px;
+    border-left: 2px solid #999;
+
+
+
+}
+.content a{
+	text-decoration: none;
+	 color: #fff;
+}
+.content a:hover{
+	color: #FCE209;
+}
+span{
+	width: 600px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 24px;
+	display: block;
+}

@@ -2,11 +2,33 @@
 	padding: 0px;
 	margin: 0px;
 }
+.head{
+	width: 900px;
+	height: 200px;
+	margin:0 auto;
+	background-image: url(../img/nav_bar.png);
+	background-size: 1024px 200px;
+}
+.head ul{
+	list-style: none;
+}
+.head ul li{
+	float: right;
+	margin-right: 20px;
+	margin-top: 60px;
+	
+	font-size: 24px;
+}
+.head ul li a{
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
 .wrap{
 	width: 1024px;
     margin:0 auto;
      background-image: url(../img/background.png);
-    height: 962px;
+    height: 1162px;
     padding-top: 62px;
      background-size:1024px 1024px ;
 }

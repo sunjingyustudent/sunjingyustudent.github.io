@@ -1,0 +1,22 @@
+*{
+	padding: 0px;
+	margin:0px;
+}
+
+.wrap{
+	width: 100%;
+	
+}
+.head{
+	width: 100%;
+	height: 100px;
+	background-image: url(../img/css3_head.png);
+    background-size: 100% 100px;
+}
+.content{
+	width: 100%;
+	height: 900px;
+	background-image: url(../img/css3_content.png);
+	background-size: cover;
+}
+

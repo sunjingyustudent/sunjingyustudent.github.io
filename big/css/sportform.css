@@ -1,0 +1,98 @@
+.sportform_above{
+	width: 900px;
+	height: 200px;
+	margin: 20px auto;
+	background-color: #D8E9FB;
+	background-image: url(../img/healthy4.png);
+	background-size: 900px 300px; 
+	
+	border-radius: 30px;
+
+}
+.sportform_above_table{
+	width: 800px;
+	height: 150px;
+	margin: 10px auto;
+	color: #fff;
+}
+.sportform_bottom{
+	width: 800px;
+	height: 600px;
+	margin: 50px 112px;
+	background-color: #F6F6F6;
+}
+.sportform_bottom_left{
+	width: 198px;
+	height: 600px;
+	border-right: 2px solid #999;
+	float: left;
+}
+.sportform_bottom_left_ul{
+	list-style: none;
+	text-align: center;
+}
+.sportform_bottom_left_ul li{
+	width: 198px;
+	height: 118px;
+	border-bottom: 2px solid #F6F6F6;
+	line-height: 118px; 
+	
+	color: #000;
+	
+}
+.sportform_bottom_left_ul li:hover{
+	border-bottom: 2px solid #D6C375;
+	color: #D6C375;
+}
+.sportform_bottom_left_ul .new{
+	border-bottom: 2px solid #D6C375;
+	color: #D6C375;
+}
+.sportform_bottom_right{
+width: 600px;
+	height: 600px;
+	float: right;
+	position: relative;
+}
+.sportform_bottom_right .no{
+	display:block;
+}
+.sportform_bottom_right div{
+	width: 600px;
+	height: 600px;
+	background-color: #ccc;
+	display: none;
+	position: absolute;
+	
+	
+}
+h1{
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.sportform_bottom_right_table{
+	width: 560px;
+	height: 540px;
+	background-color: #ccc;
+	margin: 0px auto;
+	border-radius: 35px;
+}
+.numText{
+	width: 60px;
+	
+}
+.sportform_bottom_right_table1{
+	width: 560px;
+	height: 200px;
+	background-color: #ccc;
+	margin: 0px auto;
+	border-radius: 35px;
+}
+input{
+	border-radius: 15px;
+}
+.button{
+	padding: 5px;
+	background-image: url(../img/button.png);
+	box-shadow: 15px 15px 15px;
+}

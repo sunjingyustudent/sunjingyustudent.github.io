@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滑动按钮</title>
+	<style type="text/css">
+	body {
+  background-color: #efebe8;
+}
+.switch{
+	width: 300px;
+	height: 80px;
+	top:40%;
+	left: 40%;
+	background-color: #d1d1d1;
+	border-radius: 40px;
+	position: absolute;
+	z-index: 1;
+}
+.switch_bg{
+	position:absolute;
+	width: 280px;
+	height: 60px;
+	top:10px;
+	left: 10px;
+	z-index: 2;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  background-color: #a5a5a5;
+
+}
+.switch_bg_bg{
+	position:absolute;
+	width: 260px;
+	height: 40px;
+	top:10px;
+	left: 10px;
+	z-index: 3;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  background-color: #919191;
+}
+.checkbox{
+	position:absolute;
+	width: 136px;
+	height: 46px;
+    top:-5px;
+    left:-5px;
+z-index: 4;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  background-color: #efebe8;
+
+}
+</style>
+</head>
+<body>
+	<div class="switch">
+	<div class="switch_bg">
+		<div class="switch_bg_bg">
+			<div class="checkbox" id="checkbox"></div>
+		</div>
+	</div>
+</div>
+	
+</body>
+<script type="text/javascript">
+	var checkbox=document.getElementById("checkbox");
+	checkbox.onclick=function(){
+		var poleft=checkbox.style.left;
+
+		if(checkbox.style.left!=130+"px"){
+		checkbox.style.left=130+"px";
+	}else{
+		checkbox.style.left=-5+"px";
+	}
+}
+</script>
+
+</html>

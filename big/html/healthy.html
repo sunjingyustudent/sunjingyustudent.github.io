@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/healthy.css">
+	<link rel="stylesheet" type="text/css" href="../css/tou.css">
+	<script type="text/javascript">
+	      window.onload=function(){
+	      	var ul=document.getElementById("healthy_bottom_left_ul");
+	      	
+	     	var li=ul.getElementsByTagName("li");
+	      	console.log(li);
+	      	 var right=document.getElementById("healthy_bottom_right");
+	      	var div=right.getElementsByTagName("div");
+	      	
+	      	for(var i=0;i<li.length;i++){
+	      	    li[i].index=i;
+	      		li[i].onclick=function(){
+	      			for(var j=0;j<li.length;j++){
+	      				li[j].className="";
+	      				div[j].className="";
+	      			}
+	      			this.className="new";
+					div[this.index].className="no";
+	      		}
+	      	}
+	      }
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+		<div class="lo">
+			<div class="logo">
+				<img src="../img/logo.png">
+			</div>
+			<div class="login">
+				<ul>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="register.html">注册</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="nav">
+			<div class="nav_ul">
+				<ul>
+					<li><a href="mainpage.html">首页</a></li>
+					<li><a href="bodytest.html">体质测试</a></li>
+					<li><a href="healthy.html">健康测试</a></li>
+					<li> <a href="sportform.html">运动处方</a></li>
+					<li><a href="teacher.html">教练介绍</a></li>
+					<li><a href="sportmonitor.html">运动监控</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="mian_content">
+				<div class="healthy_above">
+					<h1>健康调查</h1>
+							<hr/>
+							<table class="healthy_above_table">
+							    <tr>
+									<td class="td_one">
+									<span>既往病史：</span><input type="text"name="after" class="text"/>
+									</td>
+									<td class="td_one">
+									<span>喜爱的运动:</span><input type="text"name="favour" class="text"/>
+									</td>
+								</tr>
+								 <tr>
+									<td class="td_one">
+									<span>家族病史：</span><input type="text"name="hart" class="text"/>
+									</td>
+									<td class="td_one">
+									<span>运动的目的：</span><input type="text"name="hart" class="text"/>
+									</td>
+								</tr>
+								 <tr>
+									<td class="td_one">
+									<span>当前病史：</span><input type="text"name="hart" class="text"/>
+									</td>
+									<td class="td_one">
+									
+									</td>
+								</tr>
+							</table>
+				</div>
+				<div class="healthy_bottom">
+					<div class="healthy_bottom_left">
+						<ul id="healthy_bottom_left_ul" class="healthy_bottom_left_ul">
+							<li class="new">part one</li>
+							<li>part two</li>
+							<li>part three</li>
+							<li>part four</li>
+							<li>part five</li>
+						</ul>
+					</div>
+					<div class="healthy_bottom_right"id="healthy_bottom_right">
+						<div class="no">
+							<table class="healthy_bottom_right_table">
+								<tr>
+									<td><span>第一部分</span></td>
+									<td><span>满意</span></td>
+									<td><span>说不清</span></td>
+									<td><span>不满意</span></td>
+								</tr>
+								<tr>
+									<td><span>01、您怎样评价自己近3个月来的生活质量？</span></td>
+									<td><input type="radio"name="1" /></td>
+									<td><input type="radio"name="1" /></td>
+									<td><input type="radio"name="1" /></td>
+								</tr>
+								<tr>
+									<td><span>02、您对自己近3个月来的健康状况满意吗？</span></td>
+									<td><input type="radio"name="2" /></td>
+									<td><input type="radio"name="2" /></td>
+									<td><input type="radio"name="2" /></td>
+								</tr>
+							</table>
+						</div>
+						<div>
+							<table class="healthy_bottom_right_table">
+								<tr>
+									<td><span>第二部分</span></td>
+									<td><span>满意</span></td>
+									<td><span>说不清</span></td>
+									<td><span>不满意</span></td>
+								</tr>
+								<tr>
+									<td><span>03、您有失眠吗？</span></td>
+									<td><input type="radio"name="3" /></td>
+									<td><input type="radio"name="3" /></td>
+									<td><input type="radio"name="3" /></td>
+								</tr>
+								<tr>
+									<td><span>04、您入睡困难吗？</span></td>
+									<td><input type="radio"name="4" /></td>
+									<td><input type="radio"name="4" /></td>
+									<td><input type="radio"name="4" /></td>
+								</tr>
+								<tr>
+									<td><span>05、您有头痛吗？</span></td>
+									<td><input type="radio"name="5" /></td>
+									<td><input type="radio"name="5" /></td>
+									<td><input type="radio"name="5" /></td>
+								</tr>
+								<tr>
+									<td><span>06、您觉得头重（头很沉）吗？</span></td>
+									<td><input type="radio"name="6" /></td>
+									<td><input type="radio"name="6" /></td>
+									<td><input type="radio"name="6" /></td>
+								</tr>
+								<tr>
+									<td><span>07、您有颈肩部不适吗？</span></td>
+									<td><input type="radio"name="7" /></td>
+									<td><input type="radio"name="7" /></td>
+									<td><input type="radio"name="7" /></td>
+								</tr>
+								<tr>
+									<td><span>08、您有腰背酸痛吗？</span></td>
+									<td><input type="radio"name="8" /></td>
+									<td><input type="radio"name="8" /></td>
+									<td><input type="radio"name="8" /></td>
+								</tr>
+								<tr>
+									<td><span>09、您有眼睛疲劳吗？</span></td>
+									<td><input type="radio"name="9" /></td>
+									<td><input type="radio"name="9" /></td>
+									<td><input type="radio"name="9" /></td>
+								</tr>
+								<tr>
+									<td><span>10、您有眼睛干涩吗？</span></td>
+									<td><input type="radio"name="10" /></td>
+									<td><input type="radio"name="10" /></td>
+									<td><input type="radio"name="10" /></td>
+								</tr>
+							</table>
+						</div>
+						<div>
+							<table class="healthy_bottom_right_table">
+								<tr>
+									<td><span>第三部分</span></td>
+									<td><span>满意</span></td>
+									<td><span>说不清</span></td>
+									<td><span>不满意</span></td>
+								</tr>
+								<tr>
+									<td><span>11、您有眼花（看东西不清晰吗）？</span></td>
+									<td><input type="radio"name="11" /></td>
+									<td><input type="radio"name="11" /></td>
+									<td><input type="radio"name="11" /></td>
+								</tr>
+								<tr>
+									<td><span>12、您有眼睛疼痛吗？</span></td>
+									<td><input type="radio"name="12" /></td>
+									<td><input type="radio"name="12" /></td>
+									<td><input type="radio"name="12" /></td>
+								</tr>
+								<tr>
+									<td><span>13、您有腹胀吗？</span></td>
+									<td><input type="radio"name="13" /></td>
+									<td><input type="radio"name="13" /></td>
+									<td><input type="radio"name="13" /></td>
+								</tr>
+								<tr>
+									<td><span>14、您感到腹痛吗？</span></td>
+									<td><input type="radio"name="14" /></td>
+									<td><input type="radio"name="14" /></td>
+									<td><input type="radio"name="14" /></td>
+								</tr>
+								<tr>
+									<td><span>15、您感到心烦吗？</span></td>
+									<td><input type="radio"name="15" /></td>
+									<td><input type="radio"name="15" /></td>
+									<td><input type="radio"name="15" /></td>
+								</tr>
+							</table>
+						</div>
+						<div>
+							<table class="healthy_bottom_right_table">
+								<tr>
+									<td><span>第四部分</span></td>
+									<td><span>满意</span></td>
+									<td><span>说不清</span></td>
+									<td><span>不满意</span></td>
+								</tr>
+								<tr>
+									<td><span>16、您感到压抑吗？</span></td>
+									<td><input type="radio"name="16" /></td>
+									<td><input type="radio"name="16" /></td>
+									<td><input type="radio"name="16" /></td>
+								</tr>
+								<tr>
+									<td><span>17、您感到孤独吗？</span></td>
+									<td><input type="radio"name="17" /></td>
+									<td><input type="radio"name="17" /></td>
+									<td><input type="radio"name="17" /></td>
+								</tr>
+								<tr>
+									<td><span>18、您有烦恼吗？</span></td>
+									<td><input type="radio"name="18" /></td>
+									<td><input type="radio"name="18" /></td>
+									<td><input type="radio"name="18" /></td>
+								</tr>
+								<tr>
+									<td><span>19、您感到愉快吗？</span></td>
+									<td><input type="radio"name="19" /></td>
+									<td><input type="radio"name="19" /></td>
+									<td><input type="radio"name="19" /></td>
+								</tr>
+								<tr>
+									<td><span>20、您能悠闲轻松的坐着吗？</span></td>
+									<td><input type="radio"name="20" /></td>
+									<td><input type="radio"name="20" /></td>
+									<td><input type="radio"name="20" /></td>
+								</tr>
+							</table>
+						</div>
+						<div>
+							<table class="healthy_bottom_right_table">
+								<tr>
+									<td><span>第五部分</span></td>
+									<td><span>满意</span></td>
+									<td><span>说不清</span></td>
+									<td><span>不满意</span></td>
+								</tr>
+								<tr>
+									<td><span>21、您怀着乐观的心情憧憬未来吗？</span></td>
+									<td><input type="radio"name="21" /></td>
+									<td><input type="radio"name="21" /></td>
+									<td><input type="radio"name="21" /></td>
+								</tr>
+								<tr>
+									<td><span>22、您觉得自己的生活有意义吗？</span></td>
+									<td><input type="radio"name="22" /></td>
+									<td><input type="radio"name="22" /></td>
+									<td><input type="radio"name="22" /></td>
+								</tr>
+								<tr>
+									<td><span>23、您觉得自己能够承担相应的社会角色吗？</span></td>
+									<td><input type="radio"name="23" /></td>
+									<td><input type="radio"name="23" /></td>
+									<td><input type="radio"name="23" /></td>
+								</tr>
+								<tr class="tijiao">
+									<td class="td_two"><button class="button">提交</button></td>
+									<td class="td_two" colspan="3"><button class="button">重置</button></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_div">
+				<span>2016-04-08@sunjingyu</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

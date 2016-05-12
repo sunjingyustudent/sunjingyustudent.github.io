@@ -1,0 +1,149 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+/*body satrt*/
+body{
+	background-image: url(../img/mainpagebg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*body end*/
+/*wrap satrt*/
+.wrap{
+	width: 400px;
+	height: 400px;
+	margin: 400px auto;
+	
+}
+/*wrap end*/
+/*wrap_a satrt*/
+.wrap_a{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	line-height: 200px;
+	text-align: center;
+	display:block;
+	float: left;
+	position: relative;
+	cursor: pointer;
+    background-color:#fff;
+    opacity: 0.2; 
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+.wrap_a:hover{
+	color: #1B6475;
+	opacity: 0.7; 
+}
+.wrap_a_one{
+	
+	animation:first 10s infinite;
+	-webkit-animation:first 10s infinite;
+	-o-animation:first 10s infinite;
+	-moz-animation:first 10s infinite;
+}
+.wrap_a_two{
+	
+	animation:second 10s infinite;
+	-webkit-animation:second 10s infinite;
+	-o-animation:second 10s infinite;
+	-moz-animation:second 10s infinite;
+}
+.wrap_a_three{
+	animation:third 10s infinite;
+	-webkit-animation:third 10s infinite;
+	-o-animation:third 10s infinite;
+	-moz-animation:third 10s infinite;
+}
+.wrap_a_four{
+	animation:fouth 10s infinite;
+	-webkit-animation:fouth 10s infinite;
+	-o-animation:fouth 10s infinite;
+	-moz-animation:fouth 10s infinite;
+}
+/*wrap_a end*/
+
+@keyframes first{
+	0%{top: 0px;left: 0px;}
+	50%{top: -200px;left: -200px;}
+	100%{top: 0px;left: 0px;}
+}
+-o-@keyframes first{
+	0%{top: 0px;left: 0px;}
+	50%{top: -200px;left: -200px;}
+	100%{top: 0px;left: 0px;}
+}
+-moz-@keyframes first{
+	0%{top: 0px;left: 0px;}
+	50%{top: -200px;left: -200px;}
+	100%{top: 0px;left: 0px;}
+}
+-webkit-@keyframes first{
+	0%{top: 0px;left: 0px;}
+	50%{top: -200px;left: -200px;}
+	100%{top: 0px;left: 0px;}
+}
+@keyframes second{
+	0%{top: 0px;right: 0px;}
+	50%{top: -200px;right: -200px;}
+	100%{top: 0px;right: 0px;}
+}
+-o-@keyframes second{
+	0%{top: 0px;right: 0px;}
+	50%{top: -200px;right: -200px;}
+	100%{top: 0px;right: 0px;}
+}
+-moz-@keyframes second{
+	0%{top: 0px;right: 0px;}
+	50%{top: -200px;right: -200px;}
+	100%{top: 0px;right: 0px;}
+}
+-webkit-@keyframes second{
+	0%{top: 0px;right: 0px;}
+	50%{top: -200px;right: -200px;}
+	100%{top: 0px;right: 0px;}
+}
+@keyframes third{
+	0%{top: 0px;left: 0px;}
+	50%{top: 200px;left: -200px;}
+	100%{top: 0px;left: 0px;}
+}
+-o-@keyframes third{
+	0%{top: 0px;left: 0px;}
+	50%{top: 200px;left: -200px;}
+	100%{top: 0px;left: 0px;}
+}
+-moz-@keyframes third{
+	0%{top: 0px;left: 0px;}
+	50%{top: 200px;left: -200px;}
+	100%{top: 0px;left: 0px;}
+}
+-webkit-@keyframes third{
+	0%{top: 0px;left: 0px;}
+	50%{top: 200px;left: -200px;}
+	100%{top: 0px;left: 0px;}
+}
+/*我的css生成器动画 start*/
+@keyframes fouth{
+	0%{top: 0px;right: 0px;}
+	50%{top: 200px;right: -200px;}
+	100%{top: 0px;right: 0px;}
+}
+-o-@keyframes fouth{
+	0%{top: 0px;right: 0px;}
+	50%{top: 200px;right: -200px;}
+	100%{top: 0px;right: 0px;}
+}
+-moz-@keyframes fouth{
+	0%{top: 0px;right: 0px;}
+	50%{top: 200px;right: -200px;}
+	100%{top: 0px;right: 0px;}
+}
+-webkit-@keyframes fouth{
+	0%{top: 0px;right: 0px;}
+	50%{top: 200px;right: -200px;}
+	100%{top: 0px;right: 0px;}
+}

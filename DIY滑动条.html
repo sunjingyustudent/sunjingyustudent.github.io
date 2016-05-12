@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DIY滑动条</title>
+	<style type="text/css">
+		.box{
+			width: 200px;
+			height: 30px;
+			position: relative;
+		}
+		.slide{
+			width: 200px;
+			height: 10px;
+			position: absolute;
+			top: 10px;
+			border-radius: 10px;
+			background-color: #999;
+			z-index: 1;
+		}
+		.slide_bar{
+			width: 40px;
+			height: 20px;
+			position: absolute;
+			top: 5px;
+			z-index: 2;
+			background-color: #ccc;
+			border-radius: 10px;
+		}
+		.henggang{
+			width: 10px;
+			height: 20px;
+			margin: 0px auto;
+			border-left: 2px #999 solid;
+			border-right: 2px #999 solid;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="slide_bar" id="slide_bar"><div class="henggang"></div></div>
+		<div class="slide"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	var slide_bar=document.getElementById("slide_bar");
+	var flag=false;
+    var left;
+	slide_bar.onmousedown=function(e){
+	    flag=true;
+		document.onmousemove=function(e){
+	    	left=e.clientX;
+		    // console.log(left);
+			if(flag){
+		         slide(e);
+		    }
+		}
+
+		
+document.onmouseup=function(){
+			   flag=false;
+			   document.onmousemove=function(){
+			   	flag=false;
+			   }
+			   
+	}	
+	return false;
+
+	}
+	
+    function slide(e){
+    	
+       var left_now=e.clientX;
+       console.log(left_now);
+       left=left_now;
+       if(left<=160&&left>=0){
+			slide_bar.style.left=left+"px";
+        }else{
+   			slide_bar.style.left=160+"px";
+   		}
+   }
+
+    
+
+	
+</script>
+</html>

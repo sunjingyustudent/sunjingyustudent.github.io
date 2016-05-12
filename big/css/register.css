@@ -1,0 +1,43 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.register{
+	width: 600px;
+	height: 600px;
+	margin: 100px auto;
+	background-image: url(../img/register1.png);
+	background-size: 800px 600px;
+	border-radius: 15px;
+	color: #FFED34;
+	font-weight: bold;
+}
+.register_box{
+	width: 600px;
+	height: 600px;
+	background-color: #999;
+	opacity: 0.5;
+	border-radius: 15px;
+}
+h1{
+	padding: 10px;
+	text-align: center;
+}
+.register_table{
+	width: 500px;
+	height: 500px;
+	margin: 20px auto;
+	text-align: center;
+	font-size: 24px;
+}
+input{
+	background-color: #fff;
+	opacity: 0.7;
+	border-radius: 15px;
+}
+.button{
+	padding: 10px;
+	background-color: #000;
+	color: #FEED9A;
+}

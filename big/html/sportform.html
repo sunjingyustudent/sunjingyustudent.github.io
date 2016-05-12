@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/sportform.css">
+	<link rel="stylesheet" type="text/css" href="../css/tou.css">
+	<script type="text/javascript">
+	      window.onload=function(){
+	      	var ul=document.getElementById("sportform_bottom_left_ul");
+	      	
+	     	var li=ul.getElementsByTagName("li");
+	      	console.log(li);
+	      	 var right=document.getElementById("sportform_bottom_right");
+	      	var div=right.getElementsByTagName("div");
+	      	
+	      	for(var i=0;i<li.length;i++){
+	      	    li[i].index=i;
+	      		li[i].onclick=function(){
+	      			for(var j=0;j<li.length;j++){
+	      				li[j].className="";
+	      				div[j].className="";
+	      			}
+	      			this.className="new";
+					div[this.index].className="no";
+	      		}
+	      	}
+	      }
+	</script>
+</head>
+<body>
+<div class="wrap">
+		<div class="head">
+		<div class="lo">
+			<div class="logo">
+				<img src="../img/logo.png">
+			</div>
+			<div class="login">
+				<ul>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="register.html">注册</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="nav">
+			<div class="nav_ul">
+				<ul>
+					<li><a href="mainpage.html">首页</a></li>
+					<li><a href="bodytest.html">体质测试</a></li>
+					<li><a href="healthy.html">健康测试</a></li>
+					<li> <a href="sportform.html">运动处方</a></li>
+					<li><a href="teacher.html">教练介绍</a></li>
+					<li><a href="sportmonitor.html">运动监控</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="mian_content">
+				<form>
+					<div class="sportform_above">
+						<table class="sportform_above_table">
+							<tr>
+								<td><span>第</span>
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+								</select>
+								<span>周期</span>
+								</td>
+								<td><span>第</span>
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+								</select>
+								<span>周</span>
+								</td>
+								<td><button class="button">查询教学课程</button></td>
+							</tr>
+							<tr>
+								
+								<td colspan="3"><span>运动的目的：</span><input type="text" /></td>
+							
+							</tr>
+						</table>
+					</div>
+					<div class="sportform_bottom">
+						<div class="sportform_bottom_left">
+							<ul id="sportform_bottom_left_ul" class="sportform_bottom_left_ul">
+								<li class="new">热身活动</li>
+								<li>有氧活动</li>
+								<li>力量训练</li>
+								<li>柔韧活动</li>
+								<li>结束动作</li>
+						</ul>
+						</div>
+						<div class="sportform_bottom_right" id="sportform_bottom_right">
+							<div class="no">
+							<h1>热身活动</h1>
+							<hr/>
+								<table class="sportform_bottom_right_table1">
+									<tr><td><span>形式：</span><input type="text" name="rxingshi" /></td></tr>
+									<tr><td><span>时间：</span><input type="text" name="rshijian" /><span>min</span></td></tr>
+									<tr><td><span>强度（目标心率）：</span><input type="text" name="rstr" /><span>b/min</span></td></tr>
+								</table>
+							</div>
+							<div>
+							<h1>有氧活动</h1>
+							<hr/>
+								<table class="sportform_bottom_right_table1">
+									<tr><td><span>形式：</span><input type="text" name="oxingshi" /></td></tr>
+									<tr><td><span>时间：</span><input type="text" name="oshijian" /><span>min</span></td></tr>
+									<tr><td><span>强度（目标心率）：</span><input type="text" name="ostr" /><span>b/min</span></td></tr>
+								</table>
+							</div>
+							<div>
+								<h1>力量训练</h1>
+							<hr/>
+								<table class="sportform_bottom_right_table">
+									<tr>
+										<td><span>动作一：</span><input type="text"name="powerone" /></td>
+										<td><span>负荷：</span><input type="text"name="loadone" class="numText" /><span>kg</span></td>
+										<td><span>共</span><input type="text"name="zuone"class="numText" /><span>组</span></td>
+										
+										
+									</tr>
+									<tr>
+									<td></td>
+										<td><span>每组</span><input type="text"name="timeone"class="numText" /><span>次</span></td>
+										<td><span>组间间歇：</span><input type="text"name="restone"class="numText" /><span>min</span></td>
+									</tr>
+									<tr>
+										<td><span>动作二：</span><input type="text"name="powerone" /></td>
+										<td><span>负荷：</span><input type="text"name="loadone" class="numText" /><span>kg</span></td>
+										<td><span>共</span><input type="text"name="zuone"class="numText" /><span>组</span></td>
+										
+										
+									</tr>
+									<tr>
+									<td></td>
+										<td><span>每组</span><input type="text"name="timeone"class="numText" /><span>次</span></td>
+										<td><span>组间间歇：</span><input type="text"name="restone"class="numText" /><span>min</span></td>
+									</tr>
+									<tr>
+										<td><span>动作三：</span><input type="text"name="powerone" /></td>
+										<td><span>负荷：</span><input type="text"name="loadone" class="numText" /><span>kg</span></td>
+										<td><span>共</span><input type="text"name="zuone"class="numText" /><span>组</span></td>
+										
+										
+									</tr>
+									<tr>
+									<td></td>
+										<td><span>每组</span><input type="text"name="timeone"class="numText" /><span>次</span></td>
+										<td><span>组间间歇：</span><input type="text"name="restone"class="numText" /><span>min</span></td>
+									</tr>
+									<tr>
+										<td><span>动作四：</span><input type="text"name="powerone" /></td>
+										<td><span>负荷：</span><input type="text"name="loadone" class="numText" /><span>kg</span></td>
+										<td><span>共</span><input type="text"name="zuone"class="numText" /><span>组</span></td>
+										
+										
+									</tr>
+									<tr>
+									<td></td>
+										<td><span>每组</span><input type="text"name="timeone"class="numText" /><span>次</span></td>
+										<td><span>组间间歇：</span><input type="text"name="restone"class="numText" /><span>min</span></td>
+									</tr>
+									<tr>
+										<td><span>动作五：</span><input type="text"name="powerone" /></td>
+										<td><span>负荷：</span><input type="text"name="loadone" class="numText" /><span>kg</span></td>
+										<td><span>共</span><input type="text"name="zuone"class="numText" /><span>组</span></td>
+										
+										
+									</tr>
+									<tr>
+									<td></td>
+										<td><span>每组</span><input type="text"name="timeone"class="numText" /><span>次</span></td>
+										<td><span>组间间歇：</span><input type="text"name="restone"class="numText" /><span>min</span></td>
+									</tr>
+								</table>
+							</div>
+							<div>
+							<h1>柔韧训练</h1>
+							<hr/>
+								<table class="sportform_bottom_right_table">
+								  <tr>
+								  	 <td><span>动作一：</span><input type="text" /></td>
+									 <td><span>次数：</span><input type="text" class="numText"/></td>
+									 <td><span>每次持续时间：</span><input type="text"class="numText" /><span>sec</span></td>
+								  </tr>
+								    <tr>
+								  	 <td><span>动作二：</span><input type="text" /></td>
+									 <td><span>次数：</span><input type="text" class="numText"/></td>
+									 <td><span>每次持续时间：</span><input type="text" class="numText"/><span>sec</span></td>
+								  </tr>
+								   <tr>
+								  	 <td><span>动作三：</span><input type="text" /></td>
+									 <td><span>次数：</span><input type="text"class="numText" /></td>
+									 <td><span>每次持续时间：</span><input type="text"class="numText" /><span>sec</span></td>
+								  </tr>
+								   <tr>
+								  	 <td><span>动作四：</span><input type="text" /></td>
+									 <td><span>次数：</span><input type="text"class="numText" /></td>
+									 <td><span>每次持续时间：</span><input type="text"class="numText" /><span>sec</span></td>
+								  </tr>
+								   <tr>
+								  	 <td><span>动作五：</span><input type="text" /></td>
+									 <td><span>次数：</span><input type="text" class="numText"/></td>
+									 <td><span>每次持续时间：</span><input type="text" class="numText"/><span>sec</span></td>
+								  </tr>
+								</table>
+							</div>
+							<div>
+								<h1>结束动作</h1>
+							<hr/>
+							<table class="sportform_bottom_right_table">
+								<tr><td><span>形式：</span><input type="text" name="oxingshi" /></td></tr>
+									<tr><td><span>时间：</span><input type="text" name="oshijian" /><span>min</span></td></tr>
+									<tr><td><span>强度（目标心率）：</span><input type="text" name="ostr" /><span>b/min</span></td></tr>
+									<tr>
+										<td><span>注意事项：</span><input type="text" /></td>
+									</tr>
+									<tr>
+										<td><span>主管教练：</span><input type="text" /></td>
+									</tr>
+							</table>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_div">
+				<span>2016-04-08@sunjingyu</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

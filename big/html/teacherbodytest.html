@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/tou.css">
+	<link rel="stylesheet" type="text/css" href="../css/teacherbodytest.css">
+	<script type="text/javascript">
+	      window.onload=function(){
+	      	var ul=document.getElementById("bodytest_left_ul");
+	      	
+	     	var li=ul.getElementsByTagName("li");
+	      	console.log(li);
+	      	 var right=document.getElementById("bodytest_right");
+	      	var div=right.getElementsByTagName("div");
+	      	
+	      	for(var i=0;i<li.length;i++){
+	      	    li[i].index=i;
+	      		li[i].onclick=function(){
+	      			for(var j=0;j<li.length;j++){
+	      				li[j].className="";
+	      				div[j].className="";
+	      			}
+	      			this.className="new";
+					div[this.index].className="no";
+	      		}
+	      	}
+	      }
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+		<div class="lo">
+			<div class="logo">
+				<img src="../img/logo.png">
+			</div>
+			<div class="login">
+				<ul>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="register.html">注册</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="nav">
+			<div class="nav_ul">
+				<ul>
+					<li><a href="teachermainpage.html">学生信息</a></li>
+					<li><a href="teacherbodytest.html">学生体质信息</a></li>
+					<li><a href="teacherhealthy.html">学生健康信息</a></li>
+					<li> <a href="teachersportform.html">学生运动处方</a></li>
+					<li><a href="teachersportmonitor.html">学生运动监控</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="mian_content">
+				<img src="../img/bodytest.png" class="content_img">
+				<form>
+				<div class="trem"><span>第</span>
+				<select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				</select>
+				 <span>学期</span>
+				</div>
+				<div class="bodytest">
+					<div class="bodytest_left" >
+						<ul class="bodytest_left_ul" id="bodytest_left_ul">
+							<li class="new">身体形态与成分</li>
+							<li>生理机能</li>
+							<li>身体素质</li>
+							
+						</ul>
+					</div>
+					<div class="bodytest_right" id="bodytest_right">
+						<div class="no ">
+							<h1>身体形态与成分</h1>
+							<hr/>
+							<table class="body_table">
+								<tr>
+									<td class="td_one"><span>*身高：</span></td>
+									<td><input type="text"name="tall" class="text" /><span>cm(例：165)</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>*体重：</span></td>
+									<td><input type="text"name="weight" class="text"/><span>kg(例：45)</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>*胸围：</span></td>
+									<td><input type="text"name="chest" class="text"/><span>cm</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>*腰围：</span></td>
+									<td><input type="text"name="waist"class="text" /><span>cm</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>*臀围：</span></td>
+									<td><input type="text"name="hip" class="text"/><span>cm</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>*体脂：</span></td>
+									<td><input type="text"name="fat" class="text"/><span>%</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>*身高体重指数：</span></td>
+									<td><input type="text"name="heightweight"class="text" /></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>*腰臀脂肪比：</span></td>
+									<td><input type="text"name="waisthip" class="text"/></td>
+								</tr>
+							</table>
+						</div>
+						<div>
+							<h1>生理机能</h1>
+							<hr/>
+							<table class="body_table">
+							    <tr>
+									<td class="td_one"><span>安静心率：</span></td>
+									<td><input type="text"name="hart" class="text"/><span>b/min</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>肺活量：</span></td>
+									<td><input type="text"name="lung" class="text"/><span>cm</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>收缩压/舒张压</span></td>
+									<td><input type="text"name="press1" class="text"/><span>-</span>
+									<input type="text"name="press2" class="text"/><span>mmHg</span></td>
+								</tr>
+							</table>
+						</div>
+						<div>
+						<h1>身体素质</h1>
+							<hr/>
+							<table class="body_table">
+							    <tr>
+									<td class="td_one"><span>握力：</span></td>
+									<td><input type="text"name="handpress" class="text"/><span>kg</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>50m跑：</span></td>
+									<td><input type="text"name="fivemeters" class="text"/><span>sec</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>立定跳远：</span></td>
+									<td><input type="text"name="jump" class="text"/><span>cm</span></td>
+								</tr>
+								  <tr>
+									<td class="td_one"><span>引体向上：</span></td>
+									<td><input type="text"name="bodyup" class="text"/><span>次</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>1000米：</span></td>
+									<td><input type="text"name="menrun" class="text"/><span>min-sec</span></td>
+								</tr>
+								<tr>
+									<td class="td_one"><span>座位体前屈：</span></td>
+									<td><input type="text"name="sit" class="text"/><span>cm</span></td>
+								</tr>
+								
+							</table>
+						</div>
+						
+					</div>
+				
+			    </div>
+			    </form>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_div">
+				<span>2016-04-08@sunjingyu</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

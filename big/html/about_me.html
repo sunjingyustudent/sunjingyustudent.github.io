@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/tou.css">
+	<link rel="stylesheet" type="text/css" href="../css/about_me.css">
+	<script type="text/javascript">
+	      window.onload=function(){
+	      	var ul=document.getElementById("about_me_left_ul");
+	      	
+	     	var li=ul.getElementsByTagName("li");
+	      	console.log(li);
+	      	 var right=document.getElementById("about_me_right");
+	      	var div=right.getElementsByTagName("div");
+	      	
+	      	for(var i=0;i<li.length;i++){
+	      	    li[i].index=i;
+	      		li[i].onclick=function(){
+	      			for(var j=0;j<li.length;j++){
+	      				li[j].className="";
+	      				div[j].className="";
+	      			}
+	      			this.className="new";
+					div[this.index].className="no";
+	      		}
+	      	}
+	      }
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+		<div class="lo">
+			<div class="logo">
+				<img src="../img/logo.png">
+			</div>
+			<div class="login">
+				<ul>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="register.html">注册</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="nav">
+			<div class="nav_ul">
+				<ul>
+					<li><a href="mainpage.html">首页</a></li>
+					<li><a href="bodytest.html">体质测试</a></li>
+					<li><a href="healthy.html">健康测试</a></li>
+					<li> <a href="sportform.html">运动处方</a></li>
+					<li><a href="teacher.html">教练介绍</a></li>
+					<li><a href="sportmonitor.html">运动监控</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<!-- content start -->
+		<div class="content">
+			<div class="mian_content">
+				<img src="../img/about.png" class="content_img">
+				<div class="about_me">
+					<div class="about_me_left" >
+						<ul class="about_me_left_ul" id="about_me_left_ul">
+							<li class="new">关于我们</li>
+							<li>联系我们</li>
+							<li>加入我们</li>
+							<li>意见反馈</li>
+						</ul>
+					</div>
+					<div class="about_me_right" id="about_me_right">
+						<div class="no">
+							<h1>关于我们</h1>
+							<hr/>
+							
+							<p>
+								我们是沈阳师范大学的一群热爱运动，积极向上的年轻人，关于我们，我们承诺将会用我们最饱满的热情去为每一个想要健身的人提供一份最合适的运动方案。
+
+							</p>
+							
+							<p>
+								<strong>
+								power dream </strong>于2016年5月上线，是一个关于运动健身的平台，按照用户的身体素质情况，为用户打造一份合身的运动方案，让每一位用户在这里收获最完美的自信与体形。
+							</p>
+							
+							<p>
+								我们的方案教练均毕业于各大体育学校，用最专业的知识和耐心的服务，让每一位用户感受到家的温暖。
+							</p>
+							
+							<p>
+								在这里我们郑重承诺，我们会以您的健康为我们的最高宗旨
+							</p>
+						</div>
+						<div>
+							<h1>联系我们</h1>
+							<hr/>
+							
+							<p>地址：沈阳师范大学体育学院</p>
+							
+							<p>邮编：110000</p>
+							
+							<p>邮箱：838076607@qq.com</p>
+							
+							<p>电话：15940277230</p>
+						</div>
+						<div>
+							<h1>加入我们</h1>
+							<hr/>
+							<p>
+								如果你也是有梦想有追求的的体育爱好者，或者你是经验丰富的.net程序员我们诚挚的邀请你加入我们。你可以给我们发邮件，你可以打电话给我们，你也可以直接到我们的办公地点。
+							</p>
+							<p>邮箱：838076607@qq.com</p>
+							<p>电话：15940277230</p>
+							<p>办公地点：沈阳师范体育学院308</p>
+						</div>
+						<div>
+							<h1>意见反馈</h1>
+							<hr/>
+							<p>
+								我们刚刚成立不久，我们还在成长，或许我们有很多的不足，但是我们愿意聆听您的建议，您的建议我们会认真查看，认真反思，认真整改我们的不足。
+							</p>
+							<p>如果您对我们有什么意见或建议，请联系我们！</p>
+							<p>邮箱：838076607@qq.com</p>
+							<p>电话：15940277230</p>
+						</div>
+					</div>
+				
+			    </div>
+		    </div>
+		</div>
+		<!-- content end -->
+		<div class="footer">
+			<div class="footer_div">
+				<span>2016-04-08@sunjingyu</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

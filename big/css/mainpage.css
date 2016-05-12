@@ -1,0 +1,19 @@
+
+
+.mian_content a img{
+	width: 900px;
+	height: 200px;
+	margin: 50px 62px;
+	border:4px solid #999;
+}
+.mian_content a:hover img{
+	opacity: 0.5;
+	
+}
+
+
+
+
+
+
+

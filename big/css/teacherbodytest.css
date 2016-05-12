@@ -1,0 +1,87 @@
+.content_img{
+	width: 798px;
+	height: 198px;
+	
+	margin: 50px 112px;
+	border: 1px solid #ccc;
+}
+.trem{
+	width: 800px;
+	height: 20px;
+	margin: 10px 112px;
+}
+.bodytest{
+	width: 800px;
+	height: 400px;
+	margin: 20px 112px;
+	background-color: #F6F6F6;
+}
+.bodytest_left{
+	width: 150px;
+	height: 400px;
+	float: left;
+	border-right: 2px solid #ccc;
+}
+.bodytest_left_ul{
+	list-style: none;
+	text-align: center;
+}
+.bodytest_left_ul li{
+	width: 150px;
+	height: 98px;
+	border-bottom: 2px solid #F6F6F6;
+	line-height: 100px; 
+	text-decoration:none;
+	color: #000;
+	display: block;
+}
+.bodytest_left_ul li:hover{
+	border-bottom: 2px solid #D6C375;
+	color: #D6C375;
+}
+/*about_me_right start*/
+.bodytest .bodytest_right{
+	width: 648px;
+	height: 400px;
+	float: right;
+	
+}
+ .bodytest .bodytest_right div{
+   
+	width: 608px;
+	height: 360px;
+  
+  display: none;
+  padding: 20px;
+   
+
+}
+.bodytest_left_ul .new{
+	border-bottom: 2px solid #D6C375;
+	color: #D6C375;
+}
+ .bodytest .bodytest_right .no{
+	display:block;
+}
+h1{
+	height: 60px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+p{
+	margin-top: 15px;
+}
+.body_table{
+	width: 560px;
+	height: 250px;
+	background-color: #ccc;
+	margin: 25px auto;
+	border-radius: 35px;
+}
+.text{
+	background-color: #999;
+	border-radius: 15px;
+}
+.td_one{
+	text-align: right;
+}

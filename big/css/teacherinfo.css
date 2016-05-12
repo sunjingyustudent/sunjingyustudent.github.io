@@ -1,0 +1,22 @@
+.teacher{
+	width: 900px;
+	height:200px;
+	margin: 20px auto; 
+}
+.teacher .teacher_left{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+.teacher .teacher_left img{
+	width: 200px;
+	height: 200px;
+	
+}
+.teacher .teacher_right{
+	width: 628px;
+	height: 158px;
+	float: right;
+	padding: 20px;
+	border: 1px solid #999;
+}

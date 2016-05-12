@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证</title>
+	<link rel="stylesheet" type="text/css" href="css/表单验证.css">
+	<script type="text/javascript" src="js/表单验证.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<div class="form_yanzheng">
+		<form action="haha.html" method="post" >
+			<h1>登录（login）</h1>
+			<div class="login_span">
+				<label for="username">用户名：</label>
+				<input type="text"  name="username" pattern="^[0-9a-zA-Z_]{6,20}$" msg="请输入6-20个字符(数字，字母，下划线)"/><span></span>
+			</div>
+			<div class="login_span">
+				<label >密码：</label>
+				<input type="password"  name="pwd" pattern="^[0-9a-zA-Z_]{3,20}$" msg="请输入3-20个字符(数字，字母，下划线)"/><span></span>
+			</div>
+			<div class="login_span">
+				<span><input type="submit" class="submit_btn" onclick=" return check();"/></span>
+			</div>
+		</form>
+	</div>
+</div>
+	
+</body>
+</html>
