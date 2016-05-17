@@ -1,0 +1,104 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.wrap{
+	width: 1024px;
+	margin: 0 auto;
+}
+.loginbar{
+	height: 50px;
+	background-color: #ccc;
+	line-height: 50px;
+}
+.loginbar_right{
+	width: 300px;
+	float: right;
+	margin-top: 5px;
+	line-height: 50px;
+	font-size: 24px;
+}
+.loginbar_right{
+	text-decoration: none;
+
+}
+.header .loginbar img{
+	width: 24px;
+	height: 24px;
+	margin: auto auto;
+}
+.search{
+	height: 100px;
+	padding-top: 20px;
+}
+.photo_logo{
+	width: 200px;
+	float: left;
+}
+.photo_logo img{
+	width: 150px;
+	height: 100px;
+}
+.button{
+	margin-right: 40px;
+}
+.search_box{
+	width: 700px;
+	height: 90px;
+	float: right;
+	background-color: #ccc;
+	line-height: 90px;
+	padding-left: 20px;
+	border-radius: 15px;
+}
+
+/*nav_one start*/
+.nav_one{
+	height: 40px;
+	line-height: 40px;
+	background-color: #999;
+}
+.nav_one ul{
+	list-style: none;
+	overflow: hidden;
+}
+.nav_one ul li{
+	float: left;
+}
+.nav_one ul li a{
+	text-decoration: none;
+	padding: 0 20px;
+	color: #fff;
+	border-right: 2px solid #ccc;
+}
+.nav_one ul li a:hover{
+	color: #ff1;
+}
+/*nav_one end*/
+/*nav_two start*/
+.nav_two{
+	height: 40px;
+	line-height: 40px;
+	background-color: #000;
+}
+.nav_two ul{
+	list-style: none;
+	overflow: hidden;
+}
+.nav_two ul li{
+	float: left;
+}
+.nav_two ul li a{
+	text-decoration: none;
+	padding-left: 2px;
+	color: #fff;
+	border-right: 2px solid #ccc;
+}
+.nav_two ul li a:hover{
+	color: #ff0;
+}
+/*nav_two end*/
+.qiutian{
+	height: 600px;
+	background-image: url(../img/qiu.png);
+}
