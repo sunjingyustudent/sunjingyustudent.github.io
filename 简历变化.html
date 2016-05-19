@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<style type="text/css">
+	body{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+		.wrap{
+			width: 1024px;
+			height: 600px;
+			margin: 100px auto;
+			background-color: #ccc;
+			position: relative;
+		}
+		.one{
+			transition:1s;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: 999;
+		    opacity: 1;
+		    
+		
+		}
+		.two{
+			transition:1s;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			
+			transform:rotate(-45deg);
+			top: 600px;
+			opacity: 0.2;
+		}
+		.three{
+			transition:1s;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		
+			transform:rotate(-90deg);
+			top: 600px;
+			left: 600px;
+			opacity: 0.2;
+		}
+		
+		.four{
+			transition:1s;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			
+			transform:rotate(-135deg);
+			top: 600px;
+			left: 1200px;
+			opacity: 0.2;
+		}
+		.five{
+			transition:1s;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		
+			transform:rotate(-180deg);
+			top: 0px;
+			left: 1200px;
+			opacity: 0.2;
+		}
+		.six{
+			transition:1s;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		
+			transform:rotate(45deg);
+			top: -600px;
+			opacity: 0.2;
+		}
+		.se{
+			transition:1s;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			
+			transform:rotate(90deg);
+			top: -600px;
+			left: 600px;
+			opacity: 0.2;
+		}
+		.eight{
+			transition:1s;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			
+			transform:rotate(-135deg);
+			top: -600px;
+			left: 900px;
+		}
+		/*小图*/
+		
+		.page_one{
+			overflow: hidden;
+			width: 200px;
+			height: 400px;
+			
+			float: left;
+			position: relative;
+		transform:rotate(-90deg);
+		top: 100px;
+
+		
+	}
+	.page_two{
+			overflow: hidden;
+		width: 200px;
+			height: 400px;
+		
+			float: left;
+			position: relative;
+		transform:rotate(-45deg);
+		
+		
+	}
+	.page_three{
+			overflow: hidden;
+		width: 200px;
+			height: 400px;
+			
+			float: left;
+			position: relative;
+		transform:rotate(0deg);
+		
+	}
+	.page_four{
+			overflow: hidden;
+		width: 200px;
+			height: 400px;
+			
+			float: left;
+			position: relative;
+		transform:rotate(45deg);
+		
+	}
+	.page_five{
+			overflow: hidden;
+		width: 200px;
+			height: 400px;
+			
+			float: left;
+			position: relative;
+	position: relative;
+		transform:rotate(90deg);
+		top: 100px;
+
+	}
+	
+
+
+	.basic-information{
+			width: 824px;
+			height: 500px;
+			padding:50px 100px;
+		}
+		.photo{
+			float: right;
+			width: 150px;
+			height:250px;
+			display: block;
+			margin-right: 60px;
+		}
+		.basic-information  content_right_img{
+			width: 400px;
+	height: 80px;
+	display: block;
+		}
+		.basic-information span{
+			font-size: 24px;
+	display: block;
+	margin: 5px 10px;
+		}
+		.person_jineng{
+			width: 824px;
+			height: 500px;
+			padding:50px 100px;
+		}
+		
+	  .content_right_img{
+			width: 400px;
+	height: 80px;
+	display: block;
+		}
+		.person_jineng span{
+			font-size: 24px;
+	display: block;
+	margin: 25px 10px;
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+	<div class="wrap">
+			<div class=" page_one" id="page_one" style="background-color:red" >
+				
+				<div class="basic-information">
+	
+			<img src="img/jiben.png" class="content_right_img">
+			<img src="img/photo.jpg" class="photo">
+			<span>姓名：孙靖宇</span>
+			<span>年龄：21</span>
+			<span>性别：女</span>
+			<span>出生年月：1995-09-20</span>
+			<span>电话：15940277230</span>
+			<span>邮箱：838076607@qq.com</span>
+			<span>籍贯：黑龙江省黑河市</span>
+			<span>毕业学校：沈阳师范大学</span>
+			<span>专业：软件工程</span>
+		
+</div>
+			</div>
+			<div class=" page_two" id="page_two" style="background-color:green">
+			<div class="person_jineng">
+	
+			<img src="img/jineng_photo.png" class="content_right_img">
+			
+			<span>熟练掌握c#，.net,css（css3），html（html5），javascript，数据库等
+掌握c、c++，java，操作系统等</span>
+				<span>本人有驾驶证</span>
+		
+</div>
+		   </div>
+			<div class=" page_three" id="page_three" style="background-color:yellow">3333333333333333333333</div>
+			<div class=" page_four" id="page_four" style="background-color:pink">4444444444444444444444444444</div>
+			<div class=" page_five" id="page_five" style="background-color:#cee">55555555555555555555555555555555</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+     var current=0;
+	 var page_one=document.getElementById("page_one");
+        var page_two=document.getElementById("page_two");
+        var page_three=document.getElementById("page_three");
+        var page_four=document.getElementById("page_four");
+        var page_five=document.getElementById("page_five");
+
+
+ var jiben=document.getElementById("jiben");
+        document.onkeydown=function(e){
+        	switch(current){
+					case 0:{rotate_change_one();current++;break;}
+					case 1:{rotate_change_two();current++;break;}
+					case 2:{rotate_change_three();current++;break;}
+					case 3:{rotate_change_four();current++;break;}
+					case 4:{rotate_change_five();current++;break;}
+					case 5:{rotate_change_small();current++;break;}
+		}
+		if(current>5){
+			current=0;
+		}
+            
+        }
+        
+        function rotate_change_one(){
+			 page_one.className="one";
+			 page_two.className="six";
+			 page_three.className="se";
+			 page_four.className="eight";
+			 page_five.className="five";
+            
+		}
+       
+	     function rotate_change_two(){
+			 page_one.className="two";
+			 page_two.className="one";
+			 page_three.className="six";
+			 page_four.className="se";
+			 page_five.className="eight";
+		}
+		function rotate_change_three(){
+			 page_one.className="three";
+			 page_two.className="two";
+			 page_three.className="one";
+			 page_four.className="six";
+			 page_five.className="se";
+		}
+		function rotate_change_four(){
+			 page_one.className="four";
+			 page_two.className="three";
+			 page_three.className="two";
+			 page_four.className="one";
+			 page_five.className="six";
+		}
+		function rotate_change_five(){
+			 page_one.className="five";
+			 page_two.className="four";
+			 page_three.className="three";
+			 page_four.className="two";
+			 page_five.className="one";
+		}
+		function rotate_change_small(){
+			 page_one.className="page_one";
+			 page_two.className="page_two";
+			 page_three.className="page_three";
+			 page_four.className="page_four";
+			 page_five.className="page_five";
+		}
+</script>
+</html>
